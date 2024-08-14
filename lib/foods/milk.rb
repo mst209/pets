@@ -1,4 +1,5 @@
+# frozen_string_literal: true
 # typed: strict
-class Milk < Food
 
+class Milk < Food
 end

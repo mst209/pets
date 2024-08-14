@@ -1,6 +1,8 @@
+# frozen_string_literal: true
 # typed: strict
-class Cat < Animal
 
+# Subclass of Animal
+class Cat < Animal
   sig { void }
   def meow
     puts 'meow'
@@ -19,5 +21,4 @@ class Cat < Animal
       false
     end
   end
-  
 end

@@ -1,7 +1,10 @@
+# frozen_string_literal: true
 # typed: strict
+
+# Abstract class for Animal
 class Animal
   extend T::Sig
-  extend T::Helpers                                    # (1)
+  extend T::Helpers # (1)
   abstract!
 
   sig { abstract.params(food: Food).returns(T::Boolean) }
@@ -10,7 +13,7 @@ class Animal
   sig(:final) { params(food: Food).void }
   def eats(food)
     if likes?(food)
-      3.times do 
+      3.times do
         make_noise
       end
     else
@@ -20,5 +23,4 @@ class Animal
 
   sig { abstract.void }
   def make_noise; end
-
 end

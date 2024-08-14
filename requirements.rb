@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'sorbet-runtime'
 require_relative 'lib/animal'
 require_relative 'lib/animals/cat'
