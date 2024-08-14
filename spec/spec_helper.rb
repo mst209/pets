@@ -1,2 +1,2 @@
 # typed: strict
-require_relative '../main'
+require_relative '../requirements'
